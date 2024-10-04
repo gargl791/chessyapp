@@ -21,7 +21,7 @@ function Register() {
       const newUser: NewUserData = { email, username, password };
 
       try {
-      const response = await axios.post("/api/register", newUser);
+      const response = await axios.post("/api/auth/register", newUser);
       console.log("User registered successfully:", response.data);
       } catch (error) {
       console.log("Error in registering new user: ", error);

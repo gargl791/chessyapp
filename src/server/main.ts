@@ -33,9 +33,11 @@ mongoose.connect(MONGOURI).then(() => {
 
 // Import routes
 import authRoutes from './routes/auth.ts';
+import chessRoutes from './routes/chess.ts'
 
 // Use routes
 app.use("/api/auth", authRoutes);
+app.use("api/chess", chessRoutes)
 
 app.get("/api", (req, res) => {
   // stuff to do with the API
