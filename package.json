@@ -16,7 +16,6 @@
     "npx": "^10.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.4.13",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.2",
     "vite-express": "*",
@@ -28,7 +27,10 @@
     "@types/react": "^18.0.38",
     "@types/react-dom": "^18.2.16",
     "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.20",
     "nodemon": "^3.0.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "tsx": "^4.19.1",
     "vite": "^5.0.2"
   }
