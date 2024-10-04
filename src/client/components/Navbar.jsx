@@ -5,9 +5,15 @@ function Navbar() {
     <div className="navbar">
       <h1>Navbar</h1>
       <ul>
-        <li>Home</li>
-        <li>Login</li>
-        <li>Contact</li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/login">Login</a>
+        </li>
+        <li>
+          <a href="/signup">Signup</a>
+        </li>
       </ul>
 
       <div className="search">

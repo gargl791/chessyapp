@@ -30,8 +30,6 @@ app.get("/hello", (_, res) => {
 });
 
 app.get("*", (req, res) => {
-  console.log(__dirname);
-  console.log(__filename);
   res.sendFile(path.join(__dirname, "/index.html"));
 });
 
