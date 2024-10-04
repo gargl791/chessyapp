@@ -31,7 +31,7 @@ function Register() {
     return (
         <div>
             <h1>Signup</h1>
-            <form onSubmit={handleRegister}>
+            <form onSubmit={handleRegisterUser}>
                 <label>Email</label>
                 <input type="email" name="email" placeholder="johndoe@example.com" />
                 <label>Username</label>
