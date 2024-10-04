@@ -4,13 +4,22 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
+import cors from "cors";
+import bodyParser from "body-parser"
+
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 
 var __dirname = path.resolve(path.dirname(__filename), "../../dist");
 
 const app = express();
+
+
 dotenv.config();
+
+app.use(cors())
+app.use(bodyParser.json()); // Parse incoming JSON data
+app.use(bodyParser.urlencoded({ extended: true }))
 
 const PORT = process.env.PORT || 8000;
 const MONGOURI = process.env.MONGO_URI || "";
