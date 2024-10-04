@@ -1,9 +1,7 @@
-import Navbar from "../components/Navbar";
 
-function Signup() {
+function Register() {
   return (
     <div>
-      <Navbar />
       <h1>Signup</h1>
       <form>
         <p>email</p>
@@ -18,4 +16,5 @@ function Signup() {
   );
 }
 
-export default Signup;
+
+export default Register;

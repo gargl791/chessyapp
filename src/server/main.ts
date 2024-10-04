@@ -12,8 +12,8 @@ var __dirname = path.resolve(path.dirname(__filename), "../../dist");
 const app = express();
 dotenv.config();
 
-const PORT = process.env.PORT;
-const MONGOURI = process.env.MONGO_URI || "8000";
+const PORT = process.env.PORT || 8000;
+const MONGOURI = process.env.MONGO_URI || "";
 
 app.use(express.static(__dirname));
 
