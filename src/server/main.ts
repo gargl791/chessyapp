@@ -20,6 +20,7 @@ dotenv.config();
 app.use(cors())
 app.use(bodyParser.json()); // Parse incoming JSON data
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.json())
 
 const PORT = process.env.PORT || 8000;
 const MONGOURI = process.env.MONGO_URI || "";
@@ -29,6 +30,12 @@ app.use(express.static(__dirname));
 mongoose.connect(MONGOURI).then(() => {
   console.log("MongoDB connected successfully");
 });
+
+// Import routes
+import authRoutes from './routes/auth.ts';
+
+// Use routes
+app.use("/api/auth", authRoutes);
 
 app.get("/api", (req, res) => {
   // stuff to do with the API
