@@ -1,7 +1,7 @@
 import express from "express"
 const router = express.Router()
 
-    router.post("/api/register", async (req, res) => {
+    router.post("/register", async (req, res) => {
         try {
 
         } catch (error) {
@@ -9,5 +9,13 @@ const router = express.Router()
         }
     });
 
+    router.get("/login", async (req, res) => {
+        try {
 
-module.exports = router
+        } catch (error) {
+
+        }
+    })
+
+
+export default router
